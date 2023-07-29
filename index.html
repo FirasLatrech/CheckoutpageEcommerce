@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
   
-  <title>Frontend Mentor | E-commerce product page</title>
+  <title>Frontend Mentor | E-commerce Product Page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -19,78 +19,106 @@
 
   <header>
 
-    <div class="textContiner">
-      <span>
+    <div class="textContainer">
+    
+      <span class="logo">
+        <div class="burgerMenu">
+          <img src="images/icon-menu.svg" alt="">
+
+        </div>
+        
         Sneakers
       </span>
-      <div class="lienContiner">
-        <a href="#">Colaction</a><a href="#">Men</a><a href="#">Women</a><a href="#">About</a>
+      <div class="linksContainer">
+        <a href="#">Collection</a><a href="#">Men</a><a href="#">Women</a><a href="#">About</a>
         <a href="#">Contact</a>
       </div>
     </div>
+    <div class="mobielMenu">
+      <img src="images/icon-close.svg" alt="" class="closeIcon">
+      <div class="lien">
+        <a href="#">Collection</a><a href="#">Men</a><a href="#">Women</a><a href="#">About</a><a href="#">Contact</a>
+      </div>
 
-    <div class="leftBarHederContiner ">
-      <img src="images/icon-cart.svg" alt="" class="curserpointer">
-      <img src="images/image-avatar.png" alt="" class="avater curserpointer">
 
+    </div>
 
+    <div class="leftBarHeaderContainer">
+      <img src="images/icon-cart.svg" alt="" class="cart cursorPointer">
 
+      <span class="numbr">0</span><img src="images/image-avatar.png" alt="" class="avatar cursorPointer">
     </div>
   </header>
+  <div class="cartcontiner">
+    <div><h4>Cart</h4>
+    <hr>
+  </div>
+    <p class="p"></p>
 
+    <div class="cartCheckout">
+      <div class="textContiner"><img class="img" src="images/image-product-1.jpg" alt="" width="60px" height="60px">
+      <p>Fall Limited Edition Sneakers
+        $125.00 x <span class="numberOfElment"></span> <span class="prise">$375.00 </span></p>
 
-  <div class="mainsection">
-
-
-
-
-
-    <div class="imgaeContent">
-
-
-      <div class="primomImage">
-        <img src="images/image-product-1.jpg" alt="">
-      </div>
-      <div class="secondImage">
-        <img src="images/image-product-1.jpg" alt="">
-        <img src="images/image-product-2.jpg" alt="">
-        <img src="images/image-product-3.jpg" alt="">
-        <img src="images/image-product-4.jpg" alt="">
+        <img src="images/icon-delete.svg" alt="" class="deletItem">
 
 
       </div>
-    </div>
+      <div > <button class="checkoutButton">Checkout</button></div>
 
 
 
-    <div class="textContent">
-      <h4>SNEAKER COMPANY</h4>
-      <h1>Fall Limited Edition
-        Sneakers</h1>
-        <p>
-          These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.
-        </p>
-        <div class="finalPrice">
-        <span>$125.00 </span><span class="remis">50%</span>
-        </div>
-        <span class="Lastprice">$ 250</span>
-        <div class="buttons">
-          <div class="addOne">
-            <span class=" curserpointer"><img src="images/icon-minus.svg" alt=""></span>
-            <span class="numbers">0</span>
-            <span class=" curserpointer"><img src="images/icon-plus.svg" alt=""></span>
 
-
-          </div>
-          <div class="addToCart curserpointer">
-            <img src="images/icon-cart.svg" alt=""> Add to cart
-          </div>
-        </div>
 
     </div>
   </div>
 
-  
 
+  <div class="mainSection">
+    <div class="imageContent">
+
+      <div class="primaryImage">
+        
+        <img class="primaryImageProductOne" src="images/image-product-1.jpg" alt="">
+        <div class="iconNextPrevious" >
+          <img src="images/icon-previous.svg" alt="" width="" height="" class="previous">
+          <img src="images/icon-next.svg" alt="" width="" class="next">
+
+        </div>
+      </div>
+      <div class="secondaryImages">
+        <img src="images/image-product-1.jpg" alt="">
+        <img src="images/image-product-2.jpg" alt="">
+        <img src="images/image-product-3.jpg" alt="">
+        <img src="images/image-product-4.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="textContent">
+      <h4>SNEAKER COMPANY</h4>
+      <h1>Fall Limited Edition Sneakers</h1>
+      <p>
+        These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.
+      </p>
+      <div class="money">
+      <div class="finalPrice">
+        <span>$125.00</span><span class="remis">50%</span>
+      </div>
+      <span class="lastPrice">$250</span>
+    </div>
+
+      <div class="buttons">
+        <div class="addOne">
+          <span class= "cursorPointer" id="minus"> <img src="images/icon-minus.svg" alt=""></span>
+          <span class="numbers">0</span>
+          <span class="cursorPointer" id="plus"><img src="images/icon-plus.svg" alt=""></span>
+        </div>
+        <div class="addToCart cursorPointer">
+          <div><img src="images/icon-cart.svg" alt=""> Add to cart</div>
+        </div>
+      </div>
+    </div>
+  </div>
+<script src="app.js"></script>
 </body>
 </html>
